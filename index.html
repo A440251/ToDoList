@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>To Do</title>
+		<!-- Calls the stylesheet.css from the same folder-->
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+	</head>
+	<body>
+		<h2>To Do</h2>
+		<!-- Not really sure how forms work... https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
+		<textarea id="maintextarea">Add an item here!</textarea>
+		
+		<button id="mainbutton">Add!</button>
+		<br/>
+		<div class="list"></div>
+		
+		
+		<textarea id="retrievalbox">Retrieved items will show here</textarea>
+		<button id="retrievalbutton" onClick=retrievalFunction();>Retrieve</button>
+
+		<script>
+		
+		
+		</script>
+	</body>
+		<!-- Jquery magic is called -->
+		<script type = "text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!-- My JS Script loaded -->
+        <script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="retrieval.js"></script>
+</html>
