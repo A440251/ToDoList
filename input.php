@@ -3,11 +3,12 @@
 	include('loader.php');
 	
 	$newTask=$_POST['serialize'];
-	$name=$data['$newTask'];  //access data like this
+	$name=$newTask['mainbutton'];  //access data like this
 	
 
 	echo ($newTask);
-	$insertion = "INSERT INTO todolist
+	echo ("$name");
+	$insertion = "INSERT INTO thingtodo
 	VALUES('$newTask')";
 	echo ($insertion);
 	mysql_query($insertion);

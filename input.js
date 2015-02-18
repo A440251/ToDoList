@@ -4,7 +4,7 @@ function inputFunction(){
 	 $.ajax({
             url: databaseURL,
             type: 'POST',
-            data: $('mainbutton').serialize(),
+            data: $('#mainbutton').serialize(),
             success: function(){
                  console.log("Success!");
             },
