@@ -3,7 +3,7 @@
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
-$db_database = 'testdb1';
+$db_database = 'todolist_db';
  
  
 $dblinkPub = mysql_connect($db_host, $db_user, $db_pass );

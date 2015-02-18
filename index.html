@@ -16,16 +16,17 @@
 		
 		
 		<textarea id="retrievalbox">Retrieved items will show here</textarea>
+		<!-- This is another way to call a function on click within the HTML-->
 		<button id="retrievalbutton" onClick=retrievalFunction();>Retrieve</button>
 
 		<script>
-		
+		$.post( "input.php", { name: "John", time: "2pm" } );
 		
 		</script>
 	</body>
 		<!-- Jquery magic is called -->
 		<script type = "text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<!-- My JS Script loaded -->
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="input.js"></script>
 		<script type="text/javascript" src="retrieval.js"></script>
 </html>
