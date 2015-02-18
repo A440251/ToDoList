@@ -2,7 +2,7 @@
 error_reporting(0);
 include('loader.php');
 
-$result = mysql_query("select * from myTasks");
+$result = mysql_query("select * from thingstodo");
 //instantiate an empty array
 $output = array();
 

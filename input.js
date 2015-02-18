@@ -1,11 +1,16 @@
-$(document).ready(function(){
-    $("#mainbutton").click(function(){
-        var toAdd = $('#maintextarea').val();
-        $('.list').append('<div class="item">' + toAdd + '</div>');
-		$.post( "input.php", { toAdd } );
-    });
+function inputFunction(){
+	var databaseURL = 'http://localhost/ToDoList/input.php';
 	
-    $(document).on("click", ".item", function () {
-        $(this).remove();
-    });
-});
+	 $.ajax({
+            url: databaseURL,
+            type: 'POST',
+            data: $('mainbutton').serialize(),
+            success: function(){
+                 console.log("Success!");
+            },
+			error: function(XMLHttpRequest, textStatus, errorThrown){      
+					alert("Failure.");
+					alert(errorThrown);
+			}
+         });         
+    };
