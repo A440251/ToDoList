@@ -11,11 +11,12 @@ function retrievalFunction(){
 			dataType: "json",
 			// processData: false,
 			success: function(jsonData){
-					document.getElementById('retrievalbox').value = jsonData;
+					var output = [];
 					$.each(jsonData, function(key, value) {
-						$.each(value, function(first_object, second_object) {
-						alert(first_object +": " + second_object);
+						$.each(value, function(columnName, inputData) {
+						output.push(inputData);
 						});
+					document.getElementById('retrievalbox').value = output;
 					});
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown){      
