@@ -1,5 +1,5 @@
 function inputFunction(){
-	var databaseURL = 'http://localhost/ToDoList/input.php?task=hello';
+	var databaseURL = 'http://localhost/ToDoList/input.php';
 	
 	 $.ajax({
             url: databaseURL,

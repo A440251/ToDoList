@@ -2,7 +2,7 @@
 	error_reporting(0);
 	include('loader.php');
 	
-	$newTask=$_POST['task'];
+	$newTask=$_POST['thingstodo'];
 
 	//$name=$newTask['mainbutton'];  //access data like this
 	
